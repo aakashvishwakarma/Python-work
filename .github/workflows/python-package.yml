@@ -32,6 +32,6 @@ jobs:
     - name: Run python file
       run: python hello2.py
       
-    - name: Test with pytest
-      run: |
-        pytest
+    #- name: Test with pytest
+   #   run: |
+     #   pytest
