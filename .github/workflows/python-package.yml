@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, windows-latest, MacOS-latest]
     strategy:
       matrix:
         python-version: [3.7, 3.8, 3.9]
@@ -30,5 +30,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
     - name: Run python file
-      run: python hello2.py && python newfile.py && python Calci.py
-      
+      run: python hello2.py && python newfile.py       
