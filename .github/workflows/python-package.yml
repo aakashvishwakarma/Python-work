@@ -27,8 +27,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
     - name: Run python file
-      run: python hello2.py
-      
-    #- name: Test with pytest
-   #   run: |
-     #   pytest
+      run: python hello2.py && python newfile.py       
