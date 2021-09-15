@@ -33,5 +33,6 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           #commands: checkov -d /
-          framework: all 
           directory: .
+          framework: all 
+         
