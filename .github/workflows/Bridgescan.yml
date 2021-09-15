@@ -33,5 +33,5 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           #commands: checkov -d /
-          framework: python 
+          framework: all 
           directory: .
